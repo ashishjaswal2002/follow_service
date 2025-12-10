@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const followSchema = new mongoose.Schema({
   followerId: {
-    type: String, // Assuming string IDs for now 
+    type: String, // Assuming string IDs for now  for fast testing other wise i have taken ObjectId
     required: true
   },
   followingId: {
