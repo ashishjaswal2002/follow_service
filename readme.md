@@ -112,3 +112,9 @@ Base URL: `http://localhost:4001/api/v1`
 
 - [Live Deployment](#)
 https://follow-service.vercel.app
+
+
+you have to create a .env file in the root directory and add the following environment variables:
+
+PORT=4001
+DATABASE=mongodb+srv://ash2002:123456M@cluster0.xvrqgdg.mongodb.net/follow-service?appName=Cluster0
