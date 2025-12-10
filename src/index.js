@@ -21,7 +21,17 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
+// Routes
 app.use('/api/v1', followRoutes);
+
+// Home Route
+app.get('/', (req, res) => {
+    res.status(200).json({
+        status: 'success',
+        message: 'Follow Service is running',
+        host: req.headers.host
+    });
+});
 
 // Global Error Handler
 app.use((err, req, res, next) => {
